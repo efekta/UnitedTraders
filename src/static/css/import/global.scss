@@ -1,0 +1,16 @@
+.g-app {
+
+}
+.g-container {
+  width: 100%;
+  padding: 0 15px;
+  margin: auto;
+  max-width: $container-lg;
+  @media(max-width: $container-lg) {
+    max-width: 100%;
+  }
+}
+
+
+
+

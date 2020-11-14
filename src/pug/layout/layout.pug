@@ -1,0 +1,16 @@
+include ../includes/mixins.pug
+doctype html
+block vars
+html(lang="ru-RU")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" , content="width=device-width, initial-scale=1")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        title #{title}
+        include ../includes/links.pug
+    body
+        .g-app
+            block header
+            block content
+        include ../includes/footer
+        script(src="js/common.js")
