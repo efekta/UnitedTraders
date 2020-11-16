@@ -1,3 +1,5 @@
+@import "../libs/slick/slick";
+@import "../libs/slick/slick-theme";
 @import "import/bootstrap-grid";
 
 @import "import/normalize";
@@ -8,6 +10,11 @@
 @import "import/buttons";
 
 @import "import/header";
-
-
+@import "import/burger";
+@import "import/mob-menu";
+@import "import/about";
+@import "import/features";
+@import "import/promo";
+@import "import/footer";
 @import "import/adaptive";
+

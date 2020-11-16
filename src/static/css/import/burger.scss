@@ -1,0 +1,52 @@
+.burger {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  top: 24px;
+  right: 15px;
+  background: transparent;
+  width: 60px;
+  cursor: pointer;
+  z-index: 3;
+  display: none;
+  span {
+    display: block;
+    width: 60%;
+    height: 1px;
+    margin-bottom: 6px;
+    background: $white;
+    transition: all .3s ease;
+    &:first-child {
+      width: 70%;
+    }
+    &:last-child {
+      width: 45%;
+    }
+  }
+  &:hover span {
+    width: 65%;
+    background: $yellow;
+  }
+}
+.burger.open {
+  span {
+    width: 70%;
+    background: $dark;
+    &:hover {
+      color: $dark;
+      background: $dark;
+    }
+  }
+  span:last-child {
+    display: none;
+  }
+  span:first-child {
+    transform: rotate(45deg);
+    margin-bottom: 0;
+  }
+  span:nth-child(2n) {
+    transform: rotate(-45deg);
+  }
+}
+

@@ -9,9 +9,13 @@ html(lang="ru-RU")
         title #{title}
         include ../includes/links.pug
     body
+        include ../includes/svg-sprite
         .g-app
-            block header
-            block content
-        .g-footer
-            include ../includes/footer
+            .g-content
+                block header
+                block content
+            .g-footer
+                include ../includes/footer
+        script(src="libs/jquery/jquery-3.4.1.min.js")
+        script(src="libs/slick/slick.min.js")
         script(src="js/common.js")

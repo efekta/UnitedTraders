@@ -1,5 +1,11 @@
 .g-app {
-
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+}
+.g-content {
+  flex: 1 0 auto;
 }
 .g-container {
   width: 100%;
@@ -10,7 +16,22 @@
     max-width: 100%;
   }
 }
-
-
+.g-footer {
+  flex-shrink: 0;
+}
+.g-subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: $black;
+}
+.g-text {
+  font-size: 14px;
+  color: $black;
+}
+.g-description {
+  font-size: 16px;
+  color: $black;
+}
 
 
